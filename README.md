@@ -10,3 +10,7 @@ and, i am tired of connecting it using remote desktop.
 
 I found the jupyter notebook server is a good way to leverage the powerful workstation, from laptops.
 
+# How to run
+
+1. Build images: `docker-compose build`
+2. 
