@@ -9,7 +9,7 @@ services:
         HTTP_PROXY: http://host.docker.internal:${PROXY_PORT:-1080}
         HTTPS_PROXY: https://host.docker.internal:${PROXY_PORT:-1080}
     volumes:
-       - ../../sourcecode:/opt/notebooks/sourcecode
+       - ../../sourcecode/RAG:/opt/notebooks/sourcecode/RAG
        - ./notebooks:/opt/notebooks/notebooks
     ports:
       - "80:8888"
