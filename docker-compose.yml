@@ -6,11 +6,11 @@ services:
       context: .
       dockerfile: ./srv/anaconda/Dockerfile
       args:
-        HTTP_PROXY: http://host.docker.internal:${PROXY_PORT:1080}
-        HTTPS_PROXY: https://host.docker.internal:${PROXY_PORT:1080}
+        HTTP_PROXY: http://host.docker.internal:${PROXY_PORT:-1080}
+        HTTPS_PROXY: https://host.docker.internal:${PROXY_PORT:-1080}
     volumes:
-       - ../sourcecode:/opt/sourcecode
-       - ./notebooks:/opt/notebooks
+       - ../sourcecode:/opt/notebooks/sourcecode
+       - ./notebooks:/opt/notebooks/notebooks
     ports:
       - "80:8888"
     command:

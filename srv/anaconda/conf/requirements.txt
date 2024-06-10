@@ -1,7 +1,2 @@
 scrapy
-mrjob
-pyodbc
-pyspark
 nltk
-jupyter_contrib_nbextensions
-jupyter_nbextensions_configurator
