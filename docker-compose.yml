@@ -1,13 +1,12 @@
 version: '3.3'
 
 services:
-
   anaconda:
     build:
       context: .
       dockerfile: ./srv/anaconda/Dockerfile
     volumes:
-       - ./notebooks:/opt/notebooks
+       - ../sourcecode:/opt/notebooks
     ports:
       - "80:8888"
     command:

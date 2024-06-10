@@ -1,4 +1,4 @@
-FROM continuumio/anaconda3
+FROM continuumio/anaconda3:latest
 
 ADD ./srv/anaconda/conf/requirements.txt /
 
