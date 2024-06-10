@@ -9,7 +9,8 @@ services:
         HTTP_PROXY: http://127.0.0.1:7890
         HTTPS_PROXY: https://127.0.0.1:7890
     volumes:
-       - ../sourcecode:/opt/notebooks
+       - ../sourcecode:/opt/sourcecode
+       - ./notebooks:/opt/notebooks
     ports:
       - "80:8888"
     command:
