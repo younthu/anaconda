@@ -1,5 +1,4 @@
 scrapy
-selenium
 mrjob
 pyodbc
 pyspark
