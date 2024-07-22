@@ -29,3 +29,26 @@ I found the jupyter notebook server is a good way to leverage the powerful works
                HTTPS_PROXY: https://host.docker.internal:${PROXY_PORT:-1080}
       ~~~~
 2. open `http://localhost` or `http://aimachine` to open the jupyternotebook, the default password is `password`, can be changed by updating file `srv/anaconda/conf/jupyter_notebook_config.json`
+
+# GPU Access
+https://docs.docker.com/compose/gpu-support/ 
+~~~
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+~~~
+
+https://github.com/AbdBarho/stable-diffusion-webui-docker/blob/master/docker-compose.yml 
+~~~yml
+    deploy:
+      resources:
+        reservations:
+          devices:
+              - driver: nvidia
+                device_ids: ['0']
+                capabilities: [compute, utility]
+~~~
