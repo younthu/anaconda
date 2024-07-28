@@ -47,3 +47,5 @@ $RECYCLE.BIN/
 #/srv/anaconda/conf/requirements.txt
 
 notebooks/.ipynb_checkpoints
+notebooks/JS/.ipynb_checkpoints
+.ipynb_checkpoints
