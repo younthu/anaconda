@@ -46,3 +46,4 @@ $RECYCLE.BIN/
 #/srv/anaconda/conf/jupyter_notebook_config.json
 #/srv/anaconda/conf/requirements.txt
 
+notebooks/.ipynb_checkpoints
